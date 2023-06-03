@@ -1,0 +1,16 @@
+# Node
+node_modules
+
+# bower
+bower_components
+
+.DS_Store
+
+.zip
+.tar
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
