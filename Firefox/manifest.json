@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Altimaps III",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "Displays Google Maps altitude on Google Street View",
     "icons": {
         "128": "app_icon.png"
@@ -24,6 +24,8 @@
     },
     "permissions": [
         "webRequest",
-        "tabs"
+        "webRequestBlocking",
+        "tabs",
+        "*://*.google.com/"
     ]
 }
