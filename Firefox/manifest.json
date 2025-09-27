@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Altimaps III",
+    "version": "3.1.0",
+    "description": "Displays Google Maps altitude on Google Street View",
+    "icons": {
+        "128": "app_icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": [
+                "https://www.google.com/maps/*",
+                "https://www.google.fr/maps/*",
+                "https://www.google.ch/maps/*",
+                "https://www.google.com/maps/",
+                "https://www.google.fr/maps/",
+                "https://www.google.ch/maps/"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "webRequest",
+        "tabs"
+    ]
+}
